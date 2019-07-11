@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include security_management *.css
+recursive-include security_management *.csv
+recursive-include security_management *.html
+recursive-include security_management *.ico
+recursive-include security_management *.js
+recursive-include security_management *.json
+recursive-include security_management *.md
+recursive-include security_management *.png
+recursive-include security_management *.py
+recursive-include security_management *.svg
+recursive-include security_management *.txt
+recursive-exclude security_management *.pyc

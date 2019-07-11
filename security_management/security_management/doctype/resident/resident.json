@@ -1,0 +1,87 @@
+{
+ "creation": "2019-06-17 05:14:55.726623",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "last_name",
+  "contact_no",
+  "mobile_user",
+  "email",
+  "door_plate",
+  "street_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mobile_user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Mobile User",
+   "options": "Mobile User",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "mobile_user.email",
+   "fieldname": "email",
+   "fieldtype": "Read Only",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "door_plate",
+   "fieldtype": "Data",
+   "label": "Door Plate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "street_no",
+   "fieldtype": "Data",
+   "label": "Street No",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-06-17 05:14:55.726623",
+ "modified_by": "Administrator",
+ "module": "Security Management",
+ "name": "Resident",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1
+}
